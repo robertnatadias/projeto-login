@@ -9,7 +9,7 @@
 }
 
 body, html{
-    background-color: purple;
+    background-color: #49a09d;
     width: 100vw;
     height: 100vh;
 }
@@ -21,8 +21,31 @@ main{
 }
 
 section#login{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
+
+    transition: width 0.2s, height 0.2s;
+    transition-timing-function: ease;
+}
+
+section > div#imagem{
+    background-image: url(../imagens/empty-hallway-office-building.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: cover; 
+}
+
+section > div#formulario{
+    display: block;
+    padding: 10px;
 }
