@@ -25,7 +25,7 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
     overflow: hidden;
 
     background-color: white;
@@ -33,7 +33,7 @@ section#login{
     height: 500px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
-
+    transform: translate(-50%, -50%);
     transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
 }
@@ -47,10 +47,10 @@ section > div#imagem{
 
 section div.campo{
     background-color: #49a09d;
-    margin: 10px 0px;
+    width: 100%;
+    margin: 5px 0px;
     height: 40px;
     border-radius: 8px;
-    padding: 5px;
 }
 
 div .campo label{
@@ -58,7 +58,7 @@ div .campo label{
 }
 
 div.campo span{
-    background-color: black;
+    
     color: white;
     font-size: 2em;
     width: 40px;
@@ -68,11 +68,16 @@ div.campo span{
 div.campo input{
     background-color: #92f0ed;
     font-size: 1em;
-    width: calc(100% - 44px)%;
-    height: 100%;
+    width: calc(100% - 45px);
+    height: 90%;
     border: 0px;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 section > div#formulario{
